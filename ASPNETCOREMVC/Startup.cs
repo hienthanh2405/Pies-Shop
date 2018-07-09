@@ -1,6 +1,7 @@
 ﻿using ASPNETCOREMVC.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,6 +23,8 @@ namespace ASPNETCOREMVC
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+
             services.AddTransient<IPieRepository, PieRepository>();
             services.AddTransient<IFeedbackRepository, FeedbackRepository>();
             services.AddMvc();
@@ -33,6 +36,8 @@ namespace ASPNETCOREMVC
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
+
+            app.UseAuthentication();
 
             //app.UseMvcWithDefaultRoute();
             app.UseMvc(routes =>

@@ -27,3 +27,5 @@ E:\GrowinLap\ASPNETCOREMVC\ASPNETCOREMVC\obj\Debug\netcoreapp2.1\Razor\Views\Hom
 E:\GrowinLap\ASPNETCOREMVC\ASPNETCOREMVC\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
 E:\GrowinLap\ASPNETCOREMVC\ASPNETCOREMVC\obj\Debug\netcoreapp2.1\Razor\Views\Feedback\FeedbackComplete.g.cshtml.cs
 E:\GrowinLap\ASPNETCOREMVC\ASPNETCOREMVC\obj\Debug\netcoreapp2.1\Razor\Views\Feedback\Index.g.cshtml.cs
+E:\GrowinLap\ASPNETCOREMVC\ASPNETCOREMVC\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
+E:\GrowinLap\ASPNETCOREMVC\ASPNETCOREMVC\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.g.cshtml.cs
